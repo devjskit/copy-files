@@ -2,6 +2,10 @@
   "name": "@whatskit/copy-files",
   "version": "0.1.0",
   "description": "Copy file globs, watching for changes.",
+  "repository": "https://github.com/whatskit/copy-files",
+  "prettier": "prettier-config-whatskit",
+  "author": "Billgo <hi@billgo.me>",
+  "license": "MIT",
   "main": "lib/index.js",
   "bin": "bin/index.js",
   "files": [
@@ -15,7 +19,6 @@
     "coverage": "nyc report -r lcov && opener coverage/lcov-report/index.html",
     "lint": "eslint bin lib test",
     "postversion": "git push && git push --tags",
-    "pretest": "npm run -s lint",
     "preversion": "npm test",
     "test": "nyc --require babel-register npm run -s _mocha",
     "watch": "npm run -s _mocha -- --require babel-register --watch --growl"
@@ -38,8 +41,10 @@
     "@mysticatea/eslint-plugin": "^13.0.0",
     "babel-preset-power-assert": "^3.0.0",
     "babel-register": "^6.26.0",
-    "codecov": "^3.8.2",
-    "eslint": "^8.18.0",
+    "prettier": "^2.7.1",
+    "prettier-config-whatskit": "^0.3.0",
+    "codecov": "^3.8.3",
+    "eslint": "^8.23.0",
     "mocha": "^10.0.0",
     "nyc": "15.1.0",
     "opener": "^1.5.2",
@@ -49,33 +54,12 @@
     "shelljs": "^0.8.5",
     "through": "^2.3.8"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/whatskit/copy-files.git"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
-  "keywords": [
-    "cp",
-    "cli",
-    "tool",
-    "commandline",
-    "sync",
-    "rsync",
-    "watch",
-    "observe",
-    "copy",
-    "dir",
-    "directory",
-    "directories",
-    "file",
-    "files"
-  ],
   "engines": {
-    "node": ">=6.5"
-  },
-  "author": "Billgo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/whatskit/copy-files/issues"
-  },
-  "homepage": "https://github.com/whatskit/copy-files"
+    "node": ">=12.14.1",
+    "npm": ">=6.13.4"
+  }
 }
