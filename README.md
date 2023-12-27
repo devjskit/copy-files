@@ -1,4 +1,4 @@
-# @whatskit/copy-files
+# @devjskit/copy-files
 
 Copy file globs, watching for changes.
 
@@ -8,7 +8,7 @@ This module provides a CLI tool like `cp`, but with watching.
 ## Installation
 
 ```
-npm install @whatskit/copy-files
+npm install @devjskit/copy-files
 ```
 
 - Requires Node.js `>=6.5`.
@@ -85,7 +85,7 @@ It maybe can use to add header comment, to optimize images, or etc...
 You can use this module as a node module.
 
 ```js
-var cpx = require("@whatskit/copy-files");
+var cpx = require("@devjskit/copy-files");
 ```
 
 ### cpx.copy
