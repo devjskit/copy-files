@@ -1,12 +1,13 @@
 {
   "name": "@devjskit/copy-files",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Copy file globs, watching for changes.",
   "author": "Billgo <hi@billgo.me>",
   "license": "MIT",
   "type": "module",
   "bin": {
-    "cpy": "index.js"
+    "cpy": "index.js",
+    "copy-files": "index.js"
   },
   "files": ["index.js"],
   "scripts": {
@@ -23,7 +24,7 @@
     "@types/node": "^22.10.1",
     "@types/web": "^0.0.186",
     "ava": "^6.2.0",
-    "execa": "^9.5.1",
+    "execa": "^9.5.2",
     "path-exists": "^5.0.0",
     "tempfile": "^5.0.0"
   },
