@@ -1,13 +1,12 @@
 {
   "name": "@devjskit/copy-files",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "Copy file globs, watching for changes.",
   "author": "Billgo <hi@billgo.me>",
   "license": "MIT",
   "type": "module",
   "bin": {
-    "cpy": "index.js",
-    "copy-files": "index.js"
+    "copy": "index.js"
   },
   "files": ["index.js"],
   "scripts": {
@@ -18,21 +17,18 @@
     "meow": "^13.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@devjskit/biome-config": "^0.1.14",
-    "@types/bun": "^1.1.14",
-    "@types/node": "^22.10.1",
-    "@types/web": "^0.0.186",
-    "ava": "^6.2.0",
-    "execa": "^9.5.2",
+    "@biomejs/biome": "2.0.0",
+    "@devjskit/biome-config": "^0.2.0",
+    "@types/bun": "^1.2.16",
+    "@types/node": "^24.0.3",
+    "@types/web": "^0.0.243",
+    "ava": "^6.4.0",
+    "execa": "^9.6.0",
     "path-exists": "^5.0.0",
     "tempfile": "^5.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
-  },
-  "engines": {
-    "node": ">=16"
   }
 }
