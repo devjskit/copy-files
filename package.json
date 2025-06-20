@@ -1,6 +1,6 @@
 {
   "name": "@devjskit/copy-files",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0",
   "description": "Copy file globs, watching for changes.",
   "author": "Billgo <hi@billgo.me>",
   "license": "MIT",
