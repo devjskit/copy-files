@@ -1,6 +1,6 @@
 {
   "name": "@devjskit/copy-files",
-  "version": "2.0.0",
+  "version": "2.0.0-alpha.0",
   "description": "Copy file globs, watching for changes.",
   "author": "Billgo <hi@billgo.me>",
   "license": "MIT",
@@ -8,10 +8,9 @@
   "bin": {
     "copy": "index.js"
   },
-  "files": ["index.js"],
-  "scripts": {
-    "test": "ava"
-  },
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "cpy": "^11.1.0",
     "meow": "^13.2.0"

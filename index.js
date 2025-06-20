@@ -7,7 +7,7 @@ import meow from "meow";
 const cli = meow(
   `
 	Usage
-	  $ cpy <source …> <destination>
+	  $ copy <source …> <destination>
 
 	Options
 	  --no-overwrite       Don't overwrite the destination
@@ -21,13 +21,13 @@ const cli = meow(
 
 	Examples
 	  Copy all .png files in src folder into dist except src/goat.png
-	  $ cpy 'src/*.png' '!src/goat.png' dist
+	  $ copy 'src/*.png' '!src/goat.png' dist
 
 	  Copy all files inside src folder into dist and preserve path structure
-	  $ cpy . '../dist/' --cwd=src
+	  $ copy . '../dist/' --cwd=src
 
 	  Copy all .png files in the src folder to dist and prefix the image filenames
-	  $ cpy 'src/*.png' dist --cwd=src --rename=hi-{{basename}}
+	  $ copy 'src/*.png' dist --cwd=src --rename=hi-{{basename}}
 `,
   {
     importMeta: import.meta,
